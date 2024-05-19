@@ -8,8 +8,10 @@ LangTrainer - тренажер для изучения английского я
 1. Установить виртуальное окружение
 2. Для windows - python -m venv myenv, myenv\Scripts\activate
 3. Для macos/linux - python3 -m venv myenv, source myenv/bin/activate
-4. Применить миграции - python3 manage.py migrate
-5. Запустить сервер - python3 managep.y runserver
+4. Установить зависимости - pip install -r requirements.txt
+5. Создать админа - python3 manage.py createsuperuser
+6. Применить миграции - python3 manage.py migrate
+7. Запустить сервер - python3 managep.py runserver
 
 Варианты очистки id объектов (так мы сможем избежать ошибок при удалении созданной карточки):
 1. delete from question_card; delete from sqlite_sequence where name='your_table';
